@@ -22,7 +22,6 @@
                                 <state key="normal" title="To Orange"/>
                                 <connections>
                                     <action selector="goToOrange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qh3-Fq-BGa"/>
-                                    <segue destination="g3c-yJ-T3D" kind="show" identifier="Orange" id="tUt-L1-Lyi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-yH-Lqh">
@@ -31,7 +30,6 @@
                                 <state key="normal" title="To White"/>
                                 <connections>
                                     <action selector="goToWhite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="saa-VT-JTq"/>
-                                    <segue destination="9vR-kW-coV" kind="show" identifier="White" id="oH5-zQ-lfK"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYT-0K-5e2">
@@ -45,6 +43,8 @@
                     <navigationItem key="navigationItem" title="Blue" id="GP3-9m-0p8"/>
                     <connections>
                         <outlet property="segueSwitch" destination="cYT-0K-5e2" id="Ltl-so-L7c"/>
+                        <segue destination="9vR-kW-coV" kind="show" identifier="White" id="qzW-HN-Krg"/>
+                        <segue destination="g3c-yJ-T3D" kind="show" identifier="Orange" id="zH1-cY-xN5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

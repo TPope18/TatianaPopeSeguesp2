@@ -15,9 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-            return segueSwitch.isOn
-        }
+    
     @IBAction func goToWhite(_ sender: UIButton) {
         if segueSwitch.isOn {
         performSegue(withIdentifier: "White", sender: nil)
